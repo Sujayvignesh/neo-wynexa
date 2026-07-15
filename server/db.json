@@ -1,0 +1,68 @@
+{
+  "users": [
+    {
+      "id": "1784010128740",
+      "name": "Sujay",
+      "email": "sujayvignesh2005@gmail.com",
+      "password": "Sujay@2005"
+    }
+  ],
+  "orders": [
+    {
+      "id": "#ORD-91311",
+      "userId": "guest",
+      "customerName": "Guest User",
+      "items": [
+        {
+          "id": 1,
+          "name": "Wireless Over-Ear Headphones",
+          "brand": "Wynexa Partners",
+          "price": 249.99,
+          "discount": 5,
+          "rating": 4.8,
+          "reviews": 170,
+          "category": "Electronics",
+          "inStock": true,
+          "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&q=80&w=600&h=600",
+          "description": "Premium wireless headphones with active noise cancellation and 30-hour battery life.",
+          "quantity": 1
+        },
+        {
+          "id": 2,
+          "name": "UltraSlim 4K Laptop",
+          "brand": "Wynexa Partners",
+          "price": 1299,
+          "discount": 6,
+          "rating": 4.5,
+          "reviews": 240,
+          "category": "Electronics",
+          "inStock": true,
+          "image": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&q=80&w=600&h=600",
+          "description": "A powerful, ultra-thin laptop featuring a brilliant 4K display and all-day battery.",
+          "quantity": 1
+        },
+        {
+          "id": 3,
+          "name": "Pro DSLR Camera",
+          "brand": "Wynexa Partners",
+          "price": 1599.99,
+          "discount": 10,
+          "rating": 4.9,
+          "reviews": 312,
+          "category": "Electronics",
+          "inStock": true,
+          "image": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&q=80&w=600&h=600",
+          "description": "Capture the world in stunning detail with this professional-grade DSLR camera.",
+          "quantity": 1
+        }
+      ],
+      "subtotal": 2898.5415,
+      "tax": 231.88332,
+      "shipping": 15,
+      "total": 3145.4248199999997,
+      "paymentMethod": "gpay",
+      "status": "Processing",
+      "date": "2026-07-15T09:18:20.927Z"
+    }
+  ]
+}

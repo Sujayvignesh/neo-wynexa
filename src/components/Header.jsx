@@ -27,7 +27,7 @@ const Header = ({ onOpenSearch }) => {
           >
             <span className="flex items-center gap-2">
               <span className="bg-white/20 px-2 py-0.5 rounded-full text-[10px] font-bold">NEW</span>
-              Free express shipping on all orders over $150.
+              Free express shipping on all orders over ₹150.
             </span>
           </motion.div>
         )}

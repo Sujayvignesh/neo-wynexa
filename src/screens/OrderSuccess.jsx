@@ -184,8 +184,8 @@ const OrderSuccess = () => {
                     <p className="text-gray-400 text-sm">{item.brand}</p>
                   </td>
                   <td className="py-4 px-2 text-center text-white">{item.quantity}</td>
-                  <td className="py-4 px-2 text-right text-gray-300">${item.price.toFixed(2)}</td>
-                  <td className="py-4 px-2 text-right font-bold text-white">${(item.price * item.quantity).toFixed(2)}</td>
+                  <td className="py-4 px-2 text-right text-gray-300">₹{item.price.toFixed(2)}</td>
+                  <td className="py-4 px-2 text-right font-bold text-white">₹{(item.price * item.quantity).toFixed(2)}</td>
                 </tr>
               ))}
             </tbody>
@@ -196,19 +196,19 @@ const OrderSuccess = () => {
           <div className="w-80 space-y-4">
             <div className="flex justify-between text-gray-400">
               <span>Subtotal:</span>
-              <span className="text-white">${orderDetails.subtotal.toFixed(2)}</span>
+              <span className="text-white">₹{orderDetails.subtotal.toFixed(2)}</span>
             </div>
             <div className="flex justify-between text-gray-400">
               <span>Tax (8%):</span>
-              <span className="text-white">${orderDetails.tax.toFixed(2)}</span>
+              <span className="text-white">₹{orderDetails.tax.toFixed(2)}</span>
             </div>
             <div className="flex justify-between text-gray-400">
               <span>Shipping:</span>
-              <span className="text-white">${orderDetails.shipping.toFixed(2)}</span>
+              <span className="text-white">₹{orderDetails.deliveryCharge.toFixed(2)}</span>
             </div>
             <div className="flex justify-between items-center border-t border-white/20 pt-4 mt-4">
               <span className="text-xl font-bold text-white">Total:</span>
-              <span className="text-3xl font-black text-cyan-400">${orderDetails.total.toFixed(2)}</span>
+              <span className="text-2xl font-black text-cyan-400">₹{orderDetails.grandTotal.toFixed(2)}</span>
             </div>
           </div>
         </div>

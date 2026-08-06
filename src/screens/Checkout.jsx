@@ -342,7 +342,7 @@ const Checkout = () => {
               {isProcessing 
                 ? 'Processing securely...' 
                 : (paymentMethod === 'card' 
-                    ? `Pay $${grandTotal.toFixed(2)} Securely` 
+                    ? `Pay ₹${grandTotal.toFixed(2)} Securely` 
                     : `Pay with ${paymentMethod === 'paypal' ? 'PayPal' : paymentMethod === 'gpay' ? 'GPay' : 'PhonePe'}`
                   )
               }
@@ -373,7 +373,7 @@ const Checkout = () => {
                   <div className="text-cyan-400 text-[11px] font-semibold tracking-wider uppercase mt-1">{item.brand}</div>
                 </div>
                 <div className="font-bold text-white">
-                  ${( (item.discount > 0 ? item.price * (1 - item.discount / 100) : item.price) * item.quantity ).toFixed(2)}
+                  ₹{( (item.discount > 0 ? item.price * (1 - item.discount / 100) : item.price) * item.quantity ).toFixed(2)}
                 </div>
               </div>
             ))}
@@ -382,21 +382,21 @@ const Checkout = () => {
           <div className="flex flex-col gap-3 mb-6 border-t border-white/10 pt-6 text-sm font-medium text-gray-400">
             <div className="flex justify-between">
               <span>Subtotal</span>
-              <span className="font-bold text-white">${cartTotal.toFixed(2)}</span>
+              <span className="font-bold text-white">₹{cartTotal.toFixed(2)}</span>
             </div>
             <div className="flex justify-between">
               <span>Shipping</span>
-              <span className="font-bold text-white">${deliveryCharge.toFixed(2)}</span>
+              <span className="font-bold text-white">₹{deliveryCharge.toFixed(2)}</span>
             </div>
             <div className="flex justify-between">
               <span>Tax (8%)</span>
-              <span className="font-bold text-white">${tax.toFixed(2)}</span>
+              <span className="font-bold text-white">₹{tax.toFixed(2)}</span>
             </div>
           </div>
           
           <div className="flex justify-between items-end border-t border-white/10 pt-6">
             <span className="text-lg font-bold text-gray-300">Total</span>
-            <span className="text-3xl font-black text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-400">${grandTotal.toFixed(2)}</span>
+            <span className="text-3xl font-black text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-400">₹{grandTotal.toFixed(2)}</span>
           </div>
         </motion.div>
 

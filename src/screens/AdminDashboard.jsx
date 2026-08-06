@@ -7,7 +7,7 @@ const AdminDashboard = () => {
   const [activeTab, setActiveTab] = useState('Dashboard');
   
   const [stats, setStats] = useState([
-    { label: 'Total Revenue', value: '$0.00', change: '+0.0%', icon: 'attach_money', color: 'text-cyan-400', bg: 'bg-cyan-500/10' },
+    { label: 'Total Revenue', value: '₹0.00', change: '+0.0%', icon: 'attach_money', color: 'text-cyan-400', bg: 'bg-cyan-500/10' },
     { label: 'Total Orders', value: '0', change: '+0.0%', icon: 'shopping_bag', color: 'text-purple-400', bg: 'bg-purple-500/10' },
     { label: 'Active Customers', value: '0', change: '+0.0%', icon: 'group', color: 'text-orange-400', bg: 'bg-orange-500/10' }
   ]);
@@ -23,7 +23,7 @@ const AdminDashboard = () => {
         const data = await response.json();
         
         setStats([
-          { label: 'Total Revenue', value: `$${data.stats.revenue.toLocaleString('en-US', {minimumFractionDigits: 2})}`, change: '+12.5%', icon: 'attach_money', color: 'text-cyan-400', bg: 'bg-cyan-500/10' },
+          { label: 'Total Revenue', value: `₹${data.stats.revenue.toLocaleString('en-US', {minimumFractionDigits: 2})}`, change: '+12.5%', icon: 'attach_money', color: 'text-cyan-400', bg: 'bg-cyan-500/10' },
           { label: 'Total Orders', value: data.stats.orders.toString(), change: '+5.2%', icon: 'shopping_bag', color: 'text-purple-400', bg: 'bg-purple-500/10' },
           { label: 'Active Customers', value: data.stats.customers.toString(), change: '+18.1%', icon: 'group', color: 'text-orange-400', bg: 'bg-orange-500/10' }
         ]);
@@ -44,7 +44,7 @@ const AdminDashboard = () => {
         const mappedProducts = data.topProducts.map(p => ({
           name: p.name,
           sales: p.sales,
-          revenue: `$${p.revenue.toLocaleString('en-US', {minimumFractionDigits: 0})}`,
+          revenue: `₹${p.revenue.toLocaleString('en-US', {minimumFractionDigits: 0})}`,
           image: p.image
         }));
         

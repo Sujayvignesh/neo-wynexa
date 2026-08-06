@@ -113,7 +113,7 @@ const SearchModal = ({ isOpen, onClose }) => {
                       </div>
                       <div className="text-right">
                         <div className="text-white font-bold">
-                          ${(product.discount > 0 ? product.price * (1 - product.discount / 100) : product.price).toFixed(2)}
+                          ₹{(product.discount > 0 ? product.price * (1 - product.discount / 100) : product.price).toFixed(2)}
                         </div>
                       </div>
                       <span className="material-symbols-outlined text-gray-600 group-hover:text-cyan-400 opacity-0 group-hover:opacity-100 transition-all transform -translate-x-2 group-hover:translate-x-0 ml-2">

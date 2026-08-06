@@ -96,11 +96,11 @@ const ProductCard = memo(({ product }) => {
             <div className="flex flex-col">
               {product.discount > 0 && (
                 <span className="text-xs line-through text-gray-500 font-medium">
-                  ${product.price.toFixed(2)}
+                  ₹{product.price.toFixed(2)}
                 </span>
               )}
               <span className="text-lg font-bold text-white tracking-wide">
-                ${discountedPrice.toFixed(2)}
+                ₹{discountedPrice.toFixed(2)}
               </span>
             </div>
             

@@ -152,7 +152,7 @@ const ProductDetails = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 bg-white/5 backdrop-blur-md p-6 rounded-2xl border border-white/10 text-sm text-gray-200 font-medium">
             <div className="flex items-center gap-3">
               <span className="material-symbols-outlined text-cyan-400 bg-white/10 p-2 rounded-xl shadow-sm border border-cyan-400/20">local_shipping</span>
-              <span>Free delivery over $50</span>
+              <span>Free delivery over ₹50</span>
             </div>
             <div className="flex items-center gap-3">
               <span className="material-symbols-outlined text-cyan-400 bg-white/10 p-2 rounded-xl shadow-sm border border-cyan-400/20">verified</span>
